@@ -1,0 +1,8 @@
+<h1> <%= @kid.name %> </h1>
+</br>
+<%= @kid.favorite_toy %>
+</br>
+<%= @kid.age %>
+</br>
+<%= link_to "Edit", edit_kid_path(@kid) %> | <%= link_to "Delete", kid_path(@kid), method: :delete, data: {confirm: "Kid is deleted, one less tuition payment"} %>
+ | <%= link_to "Back", kids_path %>
